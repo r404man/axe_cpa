@@ -1,0 +1,828 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 15px 45px;
+    background-color: #2572FF;
+    border-radius: 120px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #1a6aff;
+}
+
+.second-btn {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.second-btn::after {
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.second-btn:hover {
+    color: #cccccc;
+    cursor: pointer;
+}
+
+
+/* Header */
+header {
+    padding-top: 25px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-navigation nav a {
+    margin-right: 40px;
+
+}
+
+.header-navigation nav a:last-child {
+    margin-right: 0px;
+}
+
+/* MAIN */
+.main {
+    height: 100vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slide-text {
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-btn {
+    z-index: 100;
+    margin-top: 80px;
+}
+
+.slide-suptitle {
+    font-size: 56px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.slide-title {
+    /* width: 76%; */
+    text-align: left;
+    font-size: 56px;
+    line-height: 140%;
+}
+
+.slide-title span {
+    font-weight: 700;
+}
+
+.last {
+    align-items: start;
+}
+
+.last .slide-suptitle {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.last .slide-title {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.main-title {
+    font-size: 200px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.main .swiper .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ABOUT */
+.about {
+    position: relative;
+}
+
+.about-image {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 45%;
+    height: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-inner {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-btn {
+    display: flex;
+    padding-left: 10rem;
+}
+
+.about-title {
+    margin-bottom: 40px;
+}
+
+.about-list li {
+    list-style-type: none;
+    margin-bottom: 35px;
+    width: 75%;
+    line-height: 140%;
+}
+
+.about-list li:last-child {
+    margin-bottom: 50px;
+}
+
+
+/* PRODUCTS */
+.products {
+    margin-top: 100px;
+}
+
+.products_inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.products-title {
+    margin-bottom: 40px;
+}
+
+.products-subtitle {
+    margin-bottom: 15px;
+}
+
+.products-subtitle:last-child {
+    margin-bottom: 40px;
+}
+
+.products-slider {
+    margin-bottom: 60px;
+}
+
+
+.products-slider {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* INFO */
+.info {
+    margin-top: 100px;
+}
+
+.info-title {
+    margin-bottom: 90px;
+}
+
+.tip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.tip-icon {
+    margin-bottom: 50px;
+}
+
+.tip-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tip-title::after {
+    content: "";
+    background: #fff;
+    height: 1px;
+    width: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+}
+
+.tip-subtitle {
+    padding: 0px 65px;
+    line-height: 140%;
+}
+
+.info-tips {
+    display: flex;
+    flex-direction: row;
+}
+
+.tip-between {
+    position: absolute;
+}
+
+.tip-between {
+    left: -21%;
+    top: 13%;
+}
+
+.tip-between:first-child {
+    left: -35%;
+}
+
+/* COMPANY */
+
+.company {
+    margin-top: 100px;
+    position: relative;
+}
+
+.company-item .company-text {
+    width: 40%;
+}
+
+.company-image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 0;
+    display: flex;
+    width: 45%;
+    height: 100%;
+}
+
+.company-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company-title {
+    margin-bottom: 70px;
+}
+
+.company-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.company-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.company-icon {
+    margin-right: 35px;
+}
+
+.company-item {
+    margin-bottom: 40px;
+}
+
+.company-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.company-btns a:first-child {
+    margin-right: 45px;
+}
+
+/* PAYMETHODS */
+
+.paymethods {
+    margin-top: 100px;
+    margin-bottom: 140px;
+}
+
+.pay-title {
+    margin-bottom: 45px
+}
+
+.pay-list {
+    background-image: url(/payback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 70px;
+    padding: 10px 0px;
+}
+
+.pay-list .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pay-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay-btns a:first-child {
+    margin-right: 45px;
+}
+
+/* FOOTER */
+
+.footer__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    padding-bottom: 45px;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .container {
+        max-width: 300px
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .header-logo {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-navigation nav a {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .header-navigation nav a:last-child {
+        margin-bottom: 0px !important;
+    }
+
+    .slide-suptitle {
+        font-size: 36px;
+    }
+
+    .last .slide-suptitle {
+        font-size: 44px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .last .slide-title {
+        font-size: 44px;
+    }
+
+    .slide-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 90px;
+        text-align: center;
+        line-height: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .about-text {
+        margin-top: 30px;
+    }
+
+    .about-title {
+        margin-bottom: 25px;
+    }
+
+    .about-list li {
+        list-style-type: none;
+        margin-bottom: 15px;
+        width: 100%;
+        line-height: 140%;
+    }
+
+    .about-image {
+        left: 0;
+        width: 100%;
+    }
+
+    .about-btn {
+        padding-left: 0px;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    .products {
+        margin-top: 30px;
+    }
+
+    .products-title {
+        margin-bottom: 25px;
+    }
+
+    .products-slider {
+        margin-bottom: 25px;
+    }
+
+    .company {
+        margin-top: 30px;
+        padding: 20px 0px;
+    }
+
+    .company-title {
+        margin-bottom: 30px;
+    }
+
+    .company-list {
+        padding: 0;
+    }
+
+    .company-item .company-text {
+        width: 100%;
+    }
+
+    .company-item {
+        margin-bottom: 25px;
+    }
+
+    .company-btns {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .company-btns a:first-child {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .company-image {
+        width: 100%;
+        left: 0;
+    }
+
+    .info {
+        margin-top: 30px;
+    }
+
+    .info-title {
+        margin-bottom: 25px;
+    }
+
+    .tip-title {
+        font-size: 18px;
+    }
+
+    .tip-subtitle {
+        padding: 0;
+    }
+
+    .tip-between {
+        display: none;
+    }
+
+    .tip-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tip-icon {
+        margin-bottom: 20px;
+    }
+
+    .tip-title::after {
+        /* display: none; */
+    }
+
+    .tip {
+        margin-bottom: 20px;
+    }
+
+    .info-tips {
+        flex-direction: column;
+    }
+
+    .paymethods {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .pay-title {
+        margin-bottom: 20px;
+    }
+
+    .pay-list .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pay-item svg {
+        width: 150px;
+        height: 70px;
+    }
+
+    .pay-item {
+        margin: 10px 0px;
+    }
+
+    .pay-list {
+        margin-bottom: 35px;
+    }
+
+    .pay-btns {
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+
+    .pay-btns a:first-child {
+        width: 100%;
+        text-align: center;
+        margin: 0px 10px 20px 10px;
+    }
+
+    footer .footer__inner.container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+
+    .copy-item {
+        margin-bottom: 10px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1000px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .header-navigation nav a {
+        margin-right: 10px;
+    }
+
+    .last .slide-suptitle {
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .last .slide-title {
+        font-size: 70px;
+        text-align: center;
+
+    }
+
+    .slide-title:nth-child(1) {
+        font-size: 30px;
+    }
+
+
+    .main-title {
+        font-size: 150px;
+    }
+
+    .about-image {
+        left: 0;
+        width: 100%;
+    }
+
+    .about {
+        padding: 25px 0px;
+    }
+
+    .about-btn {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    section.about {
+        margin-top: 0px !important;
+    }
+
+    section {
+        margin-top: 50px !important;
+    }
+
+    .company {
+        padding: 30px 0px;
+    }
+
+    .company-image {
+        left: 0;
+        width: 100%;
+    }
+
+    .company-btns {
+        justify-content: center;
+    }
+
+    .tip-between {
+        display: none;
+    }
+
+    .info-tips {
+        justify-content: space-between;
+    }
+
+    .tip {
+        width: 30%;
+    }
+
+    .tip-icon {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .info-title {
+        margin-bottom: 40px;
+    }
+
+    .tip-icon svg {
+        width: 40px;
+        height: 70px;
+    }
+
+    .tip-title {
+        /* flex-grow: 1; */
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .tip-title::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .tip-subtitle {
+        padding: 0px;
+    }
+
+    .pay-item svg {
+        width: 150px;
+        height: 75px;
+    }
+
+    .products-slider {
+        margin-bottom: 0px;
+    }
+
+    .paymethods {
+        margin-bottom: 80px;
+    }
+}
+
+
+@media(min-width:1001px) and (max-width:1200px) {
+    .container {
+        max-width: 980px;
+    }
+
+    .tip-title::after {
+        width: 100%;
+        left: 0;
+    }
+}
